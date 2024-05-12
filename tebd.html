@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f0f1;
+        }
+        .topic {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .topic h2 {
+            color: #333;
+            text-align: center;
+        }
+        .topic p {
+            color: #666;
+            text-align: justify;
+        }
+        .topic .see-here {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .topic .see-here a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .topic .checkboxes {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .topic .checkboxes label {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="topic">
+        <h2>Title: Time-dependent variational principle with ancillary Krylov subspace</h2>
+        <p>Abstract: We propose an improved scheme to do the time-dependent variational principle (TDVP) in finite matrix product states (MPSs) for two-dimensional systems or one-dimensional systems with long-range interactions. We present a method to represent the time-evolving state in a MPS with its basis enriched by state averaging with global Krylov vectors. We show that the projection error is significantly reduced so precise time evolution can still be obtained even if a larger time step is used. Combined with the one-site TDVP, our approach provides a way to dynamically increase the bond dimension while still preserving unitarity for real-time evolution. Our method can be more accurate and exhibit slower bond dimension growth than the conventional two-site TDVP.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.094315">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Matrix product states approaches to operator spreading in ergodic quantum systems</h2>
+        <p>Abstract: We review different matrix-product-state (MPS) approaches to study the spreading of operators in generic nonintegrable quantum systems. As a common ground to all methods, we quantify this spreading by means of the Frobenius norm of the commutator of a spreading operator with a local operator, which is usually referred to as the out-of-time-order correlation (OTOC) function. We compare two approaches based on matrix-product states in the Schrödinger picture: the time-dependent block decimation (TEBD) and the time-dependent variational principle (TDVP), as well as TEBD based on matrix-product operators directly in the Heisenberg picture. The results of all methods are compared to numerically exact results using Krylov space exact time evolution. We find that for the Schrödinger picture, the TDVP algorithm performs better than the TEBD algorithm.
+        Moreover, the tails of the OTOC are accurately obtained both by TDVP MPS and TEBD MPO. They are in very good agreement with exact results at short times, and appear to be converged in bond dimensions even at longer times. However, the growth and saturation regimes are not well captured by either of the methods.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.104303">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Numerical simulation of Kerr nonlinear systems; analyzing non-classical dynamics</h2>
+        <p>Abstract: We simulate coherent driven free dissipative Kerr nonlinear system numerically using Euler's method by solving Heisenberg equation of motion and time evolving block decimation (TEBD) algorithm, and demonstrate how the numerical results are analogous to classical bistability. The comparison with analytics show that the TEBD numerics follow the quantum mechanical exact solution obtained by mapping the equation of motion of the density matrix of the system to a Fokker-Plank equation . Comparing between two different numerical techniques, we see that the semi-classical Euler's method gives the dynamics of the system field of one among two coherent branches, whereas TEBD numerics generate the superposition of both of them. Therefore, the time dynamics determined by TEBD numerical method undergoes through a non-classical state which is also shown by determining second order correlation function.</p>
+        <div class="see-here">
+            <a href="https://iopscience.iop.org/article/10.1088/2399-6528/ab4690/meta">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Comparison of MPS based real time evolution algorithms for Anderson Impurity Models</h2>
+        <p>Abstract: We perform a detailed comparison of two Matrix Product States (MPS) based time evolution algorithms for Anderson Impurity Models. To describe the bath, we use both the star-geometry as well as the commonly employed Wilson chain geometry. For each bath geometry, we use either the Time Dependent Variational Principle (TDVP) or the Time Evolving Block Decimation (TEBD) to perform the time evolution. To apply TEBD for the star-geometry, we use a specially adapted algorithm that can deal with the long-range coupling terms. Analyzing the major sources of errors, one expects them to be proportional to the system size for all algorithms. Surprisingly, we find errors independent of system size except for TEBD in chain geometry. Additionally, we show that the right combination of bath representation and time evolution algorithm is important. While TDVP in chain geometry is a very precise approach, TEBD in star geometry is much faster, such that for a given accuracy it is superior to TDVP in chain geometry. This makes the adapted version of TEBD in star geometry the most efficient method to solve impurity problems.</p>
+        <div class="see-here">
+            <a href="https://arxiv.org/abs/1906.09077">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Boosted Imaginary Time Evolution of Matrix Product States</h2>
+        <p>Abstract: In this work, we consider the imaginary time evolution of matrix product states. We present a novel quantum-inspired classical method that, when combined with time evolving block decimation (TEBD), is able to potentially speed-up the convergence to a ground state compared to TEBD alone. Our method, referred to as boosted imaginary time evolution, relies on the use of reflections to boost to lower energy states. Interleaving TEBD steps with boosts reduces the total number of TEBD steps and potentially the computational cost required to imaginary time evolve a matrix product state to a ground state. We give the mathematical details of the method followed by an algorithmic implementation and finally some results for a simple test case.</p>
+        <div class="see-here">
+            <a href="https://arxiv.org/abs/2405.04959">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Improved scaling of time-evolving block-decimation algorithm through reduced-rank randomized singular value decomposition</h2>
+        <p>Abstract: When the amount of entanglement in a quantum system is limited, the relevant dynamics of the system is restricted to a very small part of the state space. When restricted to this subspace the description of the system becomes efficient in the system size. A class of algorithms, exemplified by the time-evolving block-decimation (TEBD) algorithm, make use of this observation by selecting the relevant subspace through a decimation technique relying on the singular value decomposition (SVD). In these algorithms, the complexity of each time-evolution step is dominated by the SVD. Here we show that, by applying a randomized version of the SVD routine (RRSVD), the power law governing the computational complexity of TEBD is lowered by one degree, resulting in a considerable speed-up. We exemplify the potential gains in efficiency at the hand of some real world examples to which TEBD can be successfully applied and demonstrate that for those systems RRSVD delivers results as accurate as state-of-the-art deterministic SVD routines.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.91.063306">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Dynamical simulations of classical stochastic systems using matrix product states</h2>
+        <p>Abstract: We adapt the time-evolving block decimation (TEBD) algorithm, originally devised to simulate the dynamics of one-dimensional quantum systems, to simulate the time evolution of nonequilibrium stochastic systems. We describe this method in detail; a system’s probability distribution is represented by a matrix product state (MPS) of finite dimension and then its time evolution is efficiently simulated by repeatedly updating and approximately refactorizing this representation. We examine the use of MPS as an approximation method, looking at parallels between the interpretations of applying it to quantum state vectors and probability distributions. In the context of stochastic systems we consider two types of factorization for use in the TEBD algorithm: non-negative matrix factorization (NMF), which ensures that the approximate probability distribution is manifestly non-negative, and the singular value decomposition (SVD). Comparing these factorizations, we find the accuracy of the SVD to be substantially greater than current NMF algorithms. We then apply TEBD to simulate the totally asymmetric simple exclusion process (TASEP) for systems of up to hundreds of lattice sites in size. Using exact analytic results for the TASEP steady state, we find that TEBD reproduces this state such that the error in calculating expectation values can be made negligible even when severely compressing the description of the system by restricting the dimension of the MPS to be very small. Out of the steady state we show for specific observables that expectation values converge as the dimension of the MPS is increased to a moderate size.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.82.036702">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Simulation of one-dimensional quantum systems with a global SU(2) symmetry</h2>
+        <p>Abstract: In this paper, we describe a refined matrix product representation for many-body states that are invariant under SU(2) transformations and use it to extend the time-evolving block decimation (TEBD) algorithm to the simulation of time evolution in the presence of an SU(2) symmetry. The resulting algorithm, when tested in a critical quantum spin chain, proved to be more efficient than the standard TEBD.</p>
+        <div class="see-here">
+            <a href="https://iopscience.iop.org/article/10.1088/1367-2630/12/3/033029/meta">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Numerically efficient unitary evolution for Hamiltonians beyond nearest-neighbors</h2>
+        <p>Abstract: Matrix product states (MPSs) and matrix product operators (MPOs) are fundamental tools in the study of quantum many-body systems, particularly in the context of tensor network methods such as Time-Evolving Block Decimation (TEBD). However, constructing compact MPO representations for Hamiltonians with interactions beyond nearest-neighbors, such as those arising in AMO systems or in systems with ring geometry, remains a challenge. In this paper, we propose a novel approach for the direct construction of compact MPOs tailored specifically for the exponential of spin Hamiltonians. This approach allows for a more efficient time evolution, using TEBD, of spin systems with interactions beyond nearest-neighbors, such as long-range spin-chains, periodic systems and more complex cluster model, with interactions involving more than two spins.</p>
+        <div class="see-here">
+            <a href="https://arxiv.org/abs/2402.05198">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Efficient Dynamical Simulation of Strongly Correlated One-Dimensional Quantum Systems</h2>
+        <p>Abstract: Studying the unitary time evolution of strongly correlated quantum systems is one of the most challenging theoretical and experimental problems in physics. For an important class of one-dimensional (1D) systems dynamical simulations have become possible since the advent of the time-evolving block decimation (TEBD) algorithm. We study the computational properties of TEBD using the Bose-Hubbard model (BHM) as a test-bed. We demonstrate its efficiency and verify its accuracy through comparisons with an exactly solvable small system and via the convergence of one- and two-particle observables in a larger system.</p>
+        <div class="see-here">
+            <a href="https://link.springer.com/chapter/10.1007/11666806_63">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Tensor-network approach to work statistics for one-dimensional quantum lattice systems</h2>
+        <p>Abstract: We introduce a tensor-network approach to calculate the statistics of work done on one-dimensional quantum lattice systems initially prepared in thermal equilibrium states. In this approach, the dynamics is simulated with time-evolving block decimation (TEBD), and the initial thermal equilibrium state is prepared either directly with TEBD or with minimally entangled typical thermal states, which generates a set of typical states representing the Gibbs canonical ensemble. As an illustrative example, we apply this approach to the Ising chain in mixed transverse and longitudinal fields. Under a prescribed protocol, the moment generating function for work distribution can be calculated, from which the quantum Jarzynski equality and the generalized quantum work relation involving a functional of an arbitrary observable are tested.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.033193">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: One-dimensional Fermi polaron in a combined harmonic and periodic potential</h2>
+        <p>Abstract: We study an impurity in a one-dimensional potential consisting of a harmonic part and a periodic part using both the time-evolving block decimation (TEBD) algorithm and a variational ansatz. Attractive and repulsive contact interactions with a sea of fermions are considered. We find excellent agreement between TEBD and variational results and use the variational ansatz to investigate higher lattice bands. We conclude that the lowest band approximation fails at sufficiently strong interactions and develop a method for computing the Tan contact parameter.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.89.053621">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Connecting entanglement in time and space: Improving the folding algorithm</h2>
+        <p>Abstract: The “folding algorithm” [M. C. Bañuls, M. B. Hastings, F. Verstraete, and J. I. Cirac, Phys. Rev. Lett. 102, 240603 (2009)] is a matrix product state algorithm for simulating quantum systems that involves a spatial evolution of a matrix product state. Hence, the computational effort of this algorithm is controlled by the temporal entanglement. We show that this temporal entanglement is, in many cases, equal to the spatial entanglement of a modified Hamiltonian. This inspires a modification to the folding algorithm, which we call the “hybrid algorithm.” We find that this leads to improved accuracy for the same numerical effort. We then use these algorithms to study relaxation in a transverse plus parallel field Ising model, finding persistent quasiperiodic oscillations for certain choices of initial conditions.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/pra/abstract/10.1103/PhysRevA.91.032306">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Positive Tensor Network Approach for Simulating Open Quantum Many-Body Systems</h2>
+        <p>Abstract: Open quantum many-body systems play an important role in quantum optics and condensed matter physics, and capture phenomena like transport, the interplay between Hamiltonian and incoherent dynamics, and topological order generated by dissipation. We introduce a versatile and practical method to numerically simulate one-dimensional open quantum many-body dynamics using tensor networks. It is based on representing mixed quantum states in a locally purified form, which guarantees that positivity is preserved at all times. Moreover, the approximation error is controlled with respect to the trace norm. Hence, this scheme overcomes various obstacles of the known numerical open-system evolution schemes. To exemplify the functioning of the approach, we study both stationary states and transient dissipative behavior, for various open quantum systems ranging from few to many bodies.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.237201">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: ime-Dependent Variational Principle for Quantum Lattices</h2>
+        <p>Abstract: We develop a new algorithm based on the time-dependent variational principle applied to matrix product states to efficiently simulate the real- and imaginary-time dynamics for infinite one-dimensional quantum lattices. This procedure (i) is argued to be optimal, (ii) does not rely on the Trotter decomposition and thus has no Trotter error, (iii) preserves all symmetries and conservation laws, and (iv) has low computational complexity. The algorithm is illustrated by using both an imaginary-time and a real-time example.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.107.070601">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Classical Simulation of Infinite-Size Quantum Lattice Systems in One Spatial Dimension</h2>
+        <p>Abstract: Invariance under translation is exploited to efficiently simulate one-dimensional quantum lattice systems in the limit of an infinite lattice. Both the computation of the ground state and the simulation of time evolution are considered.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.98.070201">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Detecting Equilibrium and Dynamical Quantum Phase Transitions in Ising Chains via Out-of-Time-Ordered Correlators</h2>
+        <p>Abstract: Out-of-time-ordered (OTO) correlators have developed into a central concept quantifying quantum information transport, information scrambling, and quantum chaos. In this Letter, we show that such an OTO correlator can also be used to dynamically detect equilibrium as well as nonequilibrium phase transitions in Ising chains. We study OTO correlators of an order parameter both in equilibrium and after a quantum quench for different variants of transverse-field Ising models in one dimension, including the integrable one as well as nonintegrable and long-range extensions. We find for all the studied models that the OTO correlator in ground states detects the quantum phase transition. After a quantum quench from a fully polarized state, we observe numerically for the short-range models that the asymptotic long-time value of the OTO correlator signals still the equilibrium critical points and ordered phases. For the long-range extension, the OTO correlator instead determines a dynamical quantum phase transition in the model. We discuss how our findings can be observed in current experiments of trapped ions or Rydberg atoms.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.121.016801">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Many-body quantum state diffusion for non-Markovian dynamics in strongly interacting systems</h2>
+        <p>Abstract: Capturing non-Markovian dynamics of open quantum systems is generally a challenging problem, especially for strongly-interacting many-body systems. In this work, we combine recently developed non-Markovian quantum state diffusion techniques with tensor network methods to address this challenge. As a first example, we explore a Hubbard-Holstein model with dissipative phonon modes, where this new approach allows us to quantitatively assess how correlations spread in the presence of non-Markovian dissipation in a 1D many-body system. We find regimes where correlation growth can be enhanced by these effects, offering new routes for dissipatively enhancing transport and correlation spreading, relevant for both solid state and cold atom experiments.</p>
+        <div class="see-here">
+            <a href="https://arxiv.org/abs/2108.06224">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Macroscopic Quantum Tunneling of Solitons in Bose-Einstein Condensates</h2>
+        <p>Abstract: We study the quantum tunneling dynamics of many-body entangled solitons composed of ultracold bosonic gases in 1D optical lattices. A bright soliton, confined by a potential barrier, is allowed to tunnel out of confinement by reducing the barrier width and for varying strengths of attractive interactions. Simulation of the Bose Hubbard Hamiltonian is performed with time-evolving block decimation. We find the characteristic 1/e time for the escape of the soliton, substantially different from the mean field prediction, and address how many-body effects like quantum fluctuations, entanglement, and nonlocal correlations affect macroscopic quantum tunneling; number fluctuations and second order correlations are suggested as experimental signatures. We find that while the escape time scales exponentially in the interactions, the time at which both the von Neumann entanglement entropy and the slope of number fluctuations is maximized scale only linearly.</p>
+        <div class="see-here">
+            <a href="https://arxiv.org/abs/1105.5164">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Fast time evolution of matrix product states using the QR decomposition</h2>
+        <p>Abstract: We propose and benchmark a modified time-evolving block decimation algorithm that uses a truncation scheme based on the QR decomposition instead of the singular value decomposition (SVD). The modification reduces the scaling with the dimension of the physical Hilbert space 
+d
+ from 
+d
+3
+ down to 
+d
+2
+. Moreover, the QR decomposition has a lower computational complexity than the SVD and allows for highly efficient implementations on GPU hardware. In a benchmark simulation of a global quench in a quantum clock model, we observe a speedup of up to three orders of magnitude comparing QR and SVD based updates on an A100 GPU.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.107.155133">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Emergent Hydrodynamics in Nonequilibrium Quantum Systems</h2>
+        <p>Abstract: A tremendous amount of recent attention has focused on characterizing the dynamical properties of periodically driven many-body systems. Here, we use a novel numerical tool termed “density matrix truncation” (DMT) to investigate the late-time dynamics of large-scale Floquet systems. We find that DMT accurately captures two essential pieces of Floquet physics, namely, prethermalization and late-time heating to infinite temperature. Moreover, by implementing a spatially inhomogeneous drive, we demonstrate that an interplay between Floquet heating and diffusive transport is crucial to understanding the system’s dynamics. Finally, we show that DMT also provides a powerful method for quantitatively capturing the emergence of hydrodynamics in static (undriven) Hamiltonians; in particular, by simulating the dynamics of generic, large-scale quantum spin chains (up to 
+L
+=
+100
+), we are able to directly extract the energy diffusion coefficient.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.030601">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Classical Simulation of Infinite-Size Quantum Lattice Systems in Two Spatial Dimensions</h2>
+        <p>Abstract: We present an algorithm to simulate two-dimensional quantum lattice systems in the thermodynamic limit. Our approach builds on the projected entangled-pair state algorithm for finite lattice systems [F. Verstraete and J. I. Cirac, arxiv:cond-mat/0407066] and the infinite time-evolving block decimation algorithm for infinite one-dimensional lattice systems [G. Vidal, Phys. Rev. Lett. 98, 070201 (2007)]. The present algorithm allows for the computation of the ground state and the simulation of time evolution in infinite two-dimensional systems that are invariant under translations. We demonstrate its performance by obtaining the ground state of the quantum Ising model and analyzing its second order quantum phase transition.</p>
+        <div class="see-here">
+            <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.101.250602">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: Coherent quantum annealing in a programmable 2,000 qubit Ising chain</h2>
+        <p>Abstract: Quantum simulation has emerged as a valuable arena for demonstrating and understanding the capabilities of near-term quantum computers1,2,3. Quantum annealing4,5 has been successfully used in simulating a range of open quantum systems, both at equilibrium6,7,8 and out of equilibrium9,10,11. However, in all previous experiments, annealing has been too slow to coherently simulate a closed quantum system, due to the onset of thermal effects from the environment. Here we demonstrate coherent evolution through a quantum phase transition in the paradigmatic setting of a one-dimensional transverse-field Ising chain, using up to 2,000 superconducting flux qubits in a programmable quantum annealer. In large systems, we observe the quantum Kibble–Zurek mechanism with theoretically predicted kink statistics, as well as characteristic positive kink–kink correlations, independent of temperature. In small chains, excitation statistics validate the picture of a Landau–Zener transition at a minimum gap. In both cases, the results are in quantitative agreement with analytical solutions to the closed-system quantum model. For slower anneals, we observe anti-Kibble–Zurek scaling in a crossover to the open quantum regime. The coherent dynamics of large-scale quantum annealers demonstrated here can be exploited to perform approximate quantum optimization, machine learning and simulation tasks.</p>
+        <div class="see-here">
+            <a href="https://www.nature.com/articles/s41567-022-01741-6">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    <div class="topic">
+        <h2>Title: </h2>
+        <p>Abstract: </p>
+        <div class="see-here">
+            <a href="https://scholar.google.com/scholar?start=90&q=TEBD&hl=en&as_sdt=0,5">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    
+
+    <div class="topic">
+        <h2>Title: </h2>
+        <p>Abstract: </p>
+        <div class="see-here">
+            <a href="">See Here</a>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="checkbox2">
+            <label for="checkbox2">Tick if interested</label>
+        </div>
+    </div>
+
+    
+</body>
+</html>
